@@ -51,7 +51,7 @@ class QuoteBox extends Component {
     tweetQuoteHandler = () => {
         let tweetIntent = "http://twitter.com/intent/tweet?text=";
         let text = { ...this.state };
-        text = encodeURIComponent(text["screenQuote"] + text["screenAuthor"]);
+        text = encodeURIComponent(text["screenQuote"] + '\n'+text["screenAuthor"].replace('"', ""));
         tweetIntent = tweetIntent + text;
         this.setState({
             tweetIntent: tweetIntent
