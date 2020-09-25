@@ -1,0 +1,5 @@
+.TweetQuote {
+  border: none;
+  grid-area: tweet;
+  background-color: red;
+}

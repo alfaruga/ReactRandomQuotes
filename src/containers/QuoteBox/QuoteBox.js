@@ -6,6 +6,7 @@ import NewQuote from "../../components/NewQuote/NewQuote";
 import TweetQuote from "../../components/TweetQuote/TweetQuote";
 import axios from "../../axiosquotes";
 import Aux from "../../hoc/Aux";
+import Spinner from "../../components/UI/Spinner/Spinner";
 
 
 class QuoteBox extends Component {
@@ -51,27 +52,27 @@ class QuoteBox extends Component {
     tweetQuoteHandler = () => {
         let tweetIntent = "http://twitter.com/intent/tweet?text=";
         let text = { ...this.state };
-        text = encodeURIComponent(text["screenQuote"] + '\n'+text["screenAuthor"].replace('"', ""));
+        text = encodeURIComponent(text["screenQuote"] + '\n' + text["screenAuthor"].replace('"', ""));
         tweetIntent = tweetIntent + text;
         this.setState({
             tweetIntent: tweetIntent
+        }, () => {
+            window.open(tweetIntent)
         })
 
 
     }
     render() {
-        let content = this.state.error ? <h1>loading</h1>
+        let content = this.state.error ? <Spinner />
             : [<Aux>
                 <Text textContent={this.state.screenQuote} />
                 <Author authorName={this.state.screenAuthor} />
                 <NewQuote clicked={this.newQuoteHandler} />
                 <TweetQuote tweetIntent={this.state.tweetIntent} clicked={this.tweetQuoteHandler} />
             </Aux>]
-        return (<div id="quote-box" className={classes.QuoteBox}>THis dude
-            {content}
+        return (<div className={classes.QuoteBox}>
+            {content}</div>)
 
-        </div>)
     }
 }
-
 export default QuoteBox;

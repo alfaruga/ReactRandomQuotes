@@ -1,0 +1,6 @@
+.Author {
+  grid-area: author;
+  font-size: 1.5em;
+  text-align: right;
+  background-color: #f3f3f3;
+}

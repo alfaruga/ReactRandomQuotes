@@ -1,11 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import classes from './App.module.css';
 import QuoteBox from "./containers/QuoteBox/QuoteBox";
 
 function App() {
   return (
-    <QuoteBox />
+    <div className={classes.App}>
+      <QuoteBox />
+    </div>
   );
 }
 

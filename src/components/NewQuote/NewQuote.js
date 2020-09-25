@@ -1,7 +1,8 @@
 import React from "react";
+import classes from "./NewQuote.module.css";
 
 const newQuote = (props) => {
-    return (<button id="new-quote" onClick={props.clicked}>New quote</button>)
+    return (<button className={classes.NewQuote} id="new-quote" onClick={props.clicked}>New quote</button>)
 }
 
 export default newQuote;

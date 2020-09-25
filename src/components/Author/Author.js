@@ -1,3 +1,4 @@
+import classes from "./Author.module.css";
 import React from "react";
 
 const author = (props) => {
@@ -7,7 +8,7 @@ const author = (props) => {
     } else {
         name = props.authorName.replace('"', "");
     }
-    return (<div>
+    return (<div className={classes.Author}>
         <p id="author">{name}</p>
     </div>)
 }

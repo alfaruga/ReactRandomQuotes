@@ -1,7 +1,7 @@
 import React from "react";
-
+import classes from "./TweetQuote.module.css"
 const tweetQuote = (props) => {
-    return (<button id="tweet-quote" onClick={props.clicked}><a target="_blank" href={props.tweetIntent}>Tweet quote</a></button>)
+    return (<button className={classes.TweetQuote} id="tweet-quote" onClick={props.clicked}>Tweet quote</button>)
 
 }
 
