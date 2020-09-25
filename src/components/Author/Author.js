@@ -5,10 +5,10 @@ const author = (props) => {
     if (props.authorName === `"`) {
         name = "Unknow";
     } else {
-        name = props.authorName;
+        name = props.authorName + '"';
     }
     return (<div>
-        <p>{name}</p>
+        <p id="author">{name}</p>
     </div>)
 }
 

@@ -15,16 +15,19 @@ class QuoteBox extends Component {
         screenQuote: null,
         screenAuthor: null,
         maxQuotes: null,
+        tweetIntent: "%22Mi%20nombre%20es%20Ozymandias%2C%20rey%20de%20reyes%3A%20%C2%A1Contemplad%20mis%20obras%2C%20poderosos%2C%20y%20desesperad!%22%20Percy%20Bysshe%20Shelley%22",
     }
 
     componentDidMount() {
         axios.get("quotes.json")
             .then(response => {
-                console.log("QUote box did mount")
+                console.log("Quote box did mount")
                 this.setState({
                     quotes: response.data,
                     error: false,
                     maxQuotes: response.data.length,
+                    screenAuthor: response.data[0]["author"],
+                    screenQuote: response.data[0]["title"],
 
                 })
             })
@@ -43,8 +46,17 @@ class QuoteBox extends Component {
         this.setState({
             screenQuote: texto["title"],
             screenAuthor: texto["author"],
-
         })
+    }
+    tweetQuoteHandler = () => {
+        let tweetIntent = "http://twitter.com/intent/tweet?text=";
+        let text = { ...this.state };
+        text = encodeURIComponent(text["screenQuote"] + text["screenAuthor"]);
+        tweetIntent = tweetIntent + text;
+        this.setState({
+            tweetIntent: tweetIntent
+        })
+
 
     }
     render() {
@@ -53,7 +65,7 @@ class QuoteBox extends Component {
                 <Text textContent={this.state.screenQuote} />
                 <Author authorName={this.state.screenAuthor} />
                 <NewQuote clicked={this.newQuoteHandler} />
-                <TweetQuote />
+                <TweetQuote tweetIntent={this.state.tweetIntent} clicked={this.tweetQuoteHandler} />
             </Aux>]
         return (<div id="quote-box" className={classes.QuoteBox}>THis dude
             {content}

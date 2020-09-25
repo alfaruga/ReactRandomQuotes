@@ -2,7 +2,7 @@ import React from "react";
 
 const text = (props) => {
     return (<div>
-        <p>{props.textContent}</p>
+        <p id="text">{props.textContent}</p>
     </div>)
 }
 
