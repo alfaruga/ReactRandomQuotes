@@ -6,7 +6,7 @@ const author = (props) => {
     if (props.authorName === `"`) {
         name = "Unknow";
     } else {
-        name = "-"+props.authorName.replace('"', "");
+        name = "~" + props.authorName.replace('"', "") + "~";
     }
     return (<div className={classes.Author}>
         <p id="author">{name}</p>

@@ -7,7 +7,7 @@
   display: grid;
   grid-template-areas:
     "quote quote quote"
-    "newquote tweet author";
+    "tweet tweet author";
 
   grid-template-rows: 61.8% 38.19%;
   grid-template-columns: 14.6% 23.6% 61.8%;

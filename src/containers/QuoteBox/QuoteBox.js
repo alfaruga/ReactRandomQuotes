@@ -2,10 +2,8 @@ import React, { Component } from "react";
 import classes from "./QuoteBox.module.css"
 import Text from "../../components/Text/Text";
 import Author from "../../components/Author/Author";
-import NewQuote from "../../components/NewQuote/NewQuote";
 import TweetQuote from "../../components/TweetQuote/TweetQuote";
 import axios from "../../axiosquotes";
-import Aux from "../../hoc/Aux";
 import Spinner from "../../components/UI/Spinner/Spinner";
 import PageContainer from "../PageContainer/PageContainer"
 
@@ -67,9 +65,8 @@ class QuoteBox extends Component {
         let content = this.state.error ? <Spinner />
             : [
                 <div className={classes.QuoteBox}>
-                    <Text textContent={this.state.screenQuote} />
+                    <Text clicked={this.newQuoteHandler} textContent={this.state.screenQuote} />
                     <Author authorName={this.state.screenAuthor} />
-                    <NewQuote clicked={this.newQuoteHandler} />
                     <TweetQuote tweetIntent={this.state.tweetIntent} clicked={this.tweetQuoteHandler} />
                 </div>
             ]
