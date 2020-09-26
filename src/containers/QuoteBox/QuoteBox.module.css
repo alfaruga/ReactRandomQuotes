@@ -1,15 +1,15 @@
 .QuoteBox {
-  width: 80vw;
-  min-width: 350px;
-  height: 30vh;
+  width: 50vw;
+  min-width: 400px;
+  position: absolute;
+  z-index: 200;
+  height: 80vh;
   display: grid;
   grid-template-areas:
-    "quote author author"
-    "quote tweet newquote"
-    "quote tweet newquote";
+    "quote quote quote"
+    "newquote tweet author";
 
-  grid-template-rows: 38.19% 23.61%;
-  grid-template-columns: 61.8% 14.6% 23.6%;
-  background-color: red;
+  grid-template-rows: 61.8% 38.19%;
+  grid-template-columns: 14.6% 23.6% 61.8%;
   font-family: "Peddana", serif;
 }

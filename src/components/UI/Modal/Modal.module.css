@@ -1,0 +1,7 @@
+.Modal {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 22;
+  background-color: rgba(0, 0, 0, 0.212);
+}

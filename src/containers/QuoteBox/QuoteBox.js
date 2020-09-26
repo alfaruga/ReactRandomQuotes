@@ -7,6 +7,7 @@ import TweetQuote from "../../components/TweetQuote/TweetQuote";
 import axios from "../../axiosquotes";
 import Aux from "../../hoc/Aux";
 import Spinner from "../../components/UI/Spinner/Spinner";
+import PageContainer from "../PageContainer/PageContainer"
 
 
 class QuoteBox extends Component {
@@ -64,14 +65,16 @@ class QuoteBox extends Component {
     }
     render() {
         let content = this.state.error ? <Spinner />
-            : [<Aux>
-                <Text textContent={this.state.screenQuote} />
-                <Author authorName={this.state.screenAuthor} />
-                <NewQuote clicked={this.newQuoteHandler} />
-                <TweetQuote tweetIntent={this.state.tweetIntent} clicked={this.tweetQuoteHandler} />
-            </Aux>]
-        return (<div className={classes.QuoteBox}>
-            {content}</div>)
+            : [
+                <div className={classes.QuoteBox}>
+                    <Text textContent={this.state.screenQuote} />
+                    <Author authorName={this.state.screenAuthor} />
+                    <NewQuote clicked={this.newQuoteHandler} />
+                    <TweetQuote tweetIntent={this.state.tweetIntent} clicked={this.tweetQuoteHandler} />
+                </div>
+            ]
+        return (<PageContainer >
+            {content}</PageContainer>)
 
     }
 }

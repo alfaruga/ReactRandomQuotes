@@ -1,6 +1,14 @@
 .Author {
   grid-area: author;
   font-size: 1.5em;
+  height: 80px;
+  width: 150px;
+  margin-top: 10px;
+  border-radius: 5px;
   text-align: right;
-  background-color: #f3f3f3;
+  justify-self: end;
+  text-decoration: none;
+  font-family: "Peddana", serif;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
 }

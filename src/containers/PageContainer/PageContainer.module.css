@@ -1,0 +1,57 @@
+.PageContainer {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img1 {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/alfarugalibrary.appspot.com/o/1_qVvGBW2qYnv1OuvAiFwEfg.png?alt=media&token=566c185d-6183-4125-8301-0ff39c244fd0");
+}
+.img2 {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/alfarugalibrary.appspot.com/o/1_qVvGBW2qYnv1OuvAiFwEfg.png?alt=media&token=566c185d-6183-4125-8301-0ff39c244fd0");
+}
+.img3 {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/alfarugalibrary.appspot.com/o/Illumination%20COP21%20One%20heart%20One%20tree%20%C2%A9%20E.Livinec-.jpeg?alt=media&token=e855407f-4d39-49ab-9905-12123bd695ad");
+}
+.img4 {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/alfarugalibrary.appspot.com/o/sun-tzu-frases-social.jpg?alt=media&token=7a00a58b-9ed5-4435-9007-4a7d3dbbced0");
+}
+.img5 {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/alfarugalibrary.appspot.com/o/success-190926.jpg?alt=media&token=fac4e3f6-6e83-4d05-b6a9-6445d618a3e6");
+}
+.img6 {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/alfarugalibrary.appspot.com/o/pexels-photo-110854.jpeg?alt=media&token=5fcde84e-8cb1-4175-a125-e7c1e110a9f0");
+}
+.img7 {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/alfarugalibrary.appspot.com/o/matterhorn-shutterstock_1118486243-900x552.jpg?alt=media&token=cf57da0d-5b08-4f4b-bd45-fb887ca0e725");
+}
+.img8 {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/alfarugalibrary.appspot.com/o/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpbSI6WyJcL2FydHdvcmtcL2ltYWdlRmlsZVwvcGllZGFkLW1pZ3VlbC1hbmdlbC5qcGciLCJyZXNpemUsODAwIl19.FXiDxaXfKT3r80TZQ6cXu5615umFEHikZAAXlW2804I.jpg?alt=media&token=33defad0-4cd4-4b45-8c28-fdd40a23a18f");
+}
+.img9 {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/alfarugalibrary.appspot.com/o/b07bff6fcd434a12418a7f132387046a.jpg?alt=media&token=4e2f2a57-2e8b-42c0-85b0-04e9d8485f98");
+}
+.img10 {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/alfarugalibrary.appspot.com/o/additional_5effaa4722e85c6f7d242ce746d18c0cf4fd0410-8.jpg?alt=media&token=049eb095-d644-480b-ac71-bb3dbcae18ba");
+}
+.img11 {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/alfarugalibrary.appspot.com/o/PGJjro3inphlGvigS1HrrjWhxoHSBZ8vuzX-vA92hSk.jpg?alt=media&token=b331cafa-17a0-450b-81fe-09cc475304ac");
+}
+.img12 {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/alfarugalibrary.appspot.com/o/Mario_Molina_speaker_keynote_speech_conferencias_940x660-306254.jpg?alt=media&token=b94d094a-808d-4277-b584-3fbab8abb762");
+}
+.img13 {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/alfarugalibrary.appspot.com/o/129633a.jpg?alt=media&token=ef2bc545-c335-427f-95a6-dca46d5f399e");
+}
+
+.img14 {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/alfarugalibrary.appspot.com/o/1573.jpg?alt=media&token=c01eba77-d770-4183-ab37-3286d27cdfb1");
+}
+.img15 {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/alfarugalibrary.appspot.com/o/1412369006-5-unforgettable-leadership-qualities-successful.jpg?alt=media&token=a683b3a0-3477-4f89-bb62-87c9fc466d41");
+}
