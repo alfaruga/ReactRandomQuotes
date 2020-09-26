@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/ReactRandomQuotes/static/css/main.5cd383c6.chunk.css",
+    "main.js": "/ReactRandomQuotes/static/js/main.c58bae3a.chunk.js",
+    "runtime-main.js": "/ReactRandomQuotes/static/js/runtime-main.d36fa834.js",
+    "static/js/2.46f46981.chunk.js": "/ReactRandomQuotes/static/js/2.46f46981.chunk.js",
+    "index.html": "/ReactRandomQuotes/index.html",
+    "precache-manifest.b0dea1dcd79677b10e71f72b092e2d17.js": "/ReactRandomQuotes/precache-manifest.b0dea1dcd79677b10e71f72b092e2d17.js",
+    "service-worker.js": "/ReactRandomQuotes/service-worker.js",
+    "static/js/2.46f46981.chunk.js.LICENSE.txt": "/ReactRandomQuotes/static/js/2.46f46981.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d36fa834.js",
+    "static/js/2.46f46981.chunk.js",
+    "static/css/main.5cd383c6.chunk.css",
+    "static/js/main.c58bae3a.chunk.js"
+  ]
+}
