@@ -56,7 +56,7 @@ class QuoteBox extends Component {
     }
     render() {
         let content = this.state.error ? <Spinner />
-            : <div className={classes.QuoteBox}>
+            : <div id="quote-box" className={classes.QuoteBox}>
                 <Text clicked={this.newQuoteHandler} textContent={this.state.screenQuote} />
                 <Author authorName={this.state.screenAuthor} />
                 <TweetQuote tweetIntent={this.state.tweetIntent} clicked={this.tweetQuoteHandler} />
