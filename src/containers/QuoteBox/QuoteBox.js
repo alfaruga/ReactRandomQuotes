@@ -17,18 +17,15 @@ class QuoteBox extends Component {
         maxQuotes: null,
         tweetIntent: "%22Mi%20nombre%20es%20Ozymandias%2C%20rey%20de%20reyes%3A%20%C2%A1Contemplad%20mis%20obras%2C%20poderosos%2C%20y%20desesperad!%22%20Percy%20Bysshe%20Shelley%22",
     }
-
     componentDidMount() {
         axios.get("quotes.json")
             .then(response => {
-                console.log("Quote box did mount")
                 this.setState({
                     quotes: response.data,
                     error: false,
                     maxQuotes: response.data.length,
                     screenAuthor: response.data[0]["author"],
                     screenQuote: response.data[0]["title"],
-
                 })
             })
             .catch(error => {
@@ -36,12 +33,10 @@ class QuoteBox extends Component {
                     error: true
                 })
             })
-
     }
     newQuoteHandler = () => {
         let random = Math.floor(Math.random() * this.state.maxQuotes) + 1;
         let texto = this.state.quotes[random];
-        console.log(texto);
 
         this.setState({
             screenQuote: texto["title"],
@@ -58,18 +53,15 @@ class QuoteBox extends Component {
         }, () => {
             window.open(tweetIntent)
         })
-
-
     }
     render() {
         let content = this.state.error ? <Spinner />
-            : [
-                <div className={classes.QuoteBox}>
-                    <Text clicked={this.newQuoteHandler} textContent={this.state.screenQuote} />
-                    <Author authorName={this.state.screenAuthor} />
-                    <TweetQuote tweetIntent={this.state.tweetIntent} clicked={this.tweetQuoteHandler} />
-                </div>
-            ]
+            : <div className={classes.QuoteBox}>
+                <Text clicked={this.newQuoteHandler} textContent={this.state.screenQuote} />
+                <Author authorName={this.state.screenAuthor} />
+                <TweetQuote tweetIntent={this.state.tweetIntent} clicked={this.tweetQuoteHandler} />
+            </div>
+
         return (<PageContainer >
             {content}</PageContainer>)
 
