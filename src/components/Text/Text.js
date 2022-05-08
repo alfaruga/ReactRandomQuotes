@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const text = (props) => {
     let editedText = props.textContent.replace(/^"|\.*"$/g, "");
-    return (<div className={classes.Container}>
+    return (<div style="overflow: hidden" className={classes.Container}>
         <FontAwesomeIcon icon="quote-left" />
         <p id="text" className={classes.Text}>{editedText}</p>
         <NewQuote clicked={props.clicked} />
