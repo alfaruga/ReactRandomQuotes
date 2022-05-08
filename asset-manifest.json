@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/ReactRandomQuotes/static/css/main.5cd383c6.chunk.css",
-    "main.js": "/ReactRandomQuotes/static/js/main.c58bae3a.chunk.js",
+    "main.css": "/ReactRandomQuotes/static/css/main.eb9232bb.chunk.css",
+    "main.js": "/ReactRandomQuotes/static/js/main.45241610.chunk.js",
     "runtime-main.js": "/ReactRandomQuotes/static/js/runtime-main.d36fa834.js",
-    "static/js/2.46f46981.chunk.js": "/ReactRandomQuotes/static/js/2.46f46981.chunk.js",
+    "static/js/2.e74006b9.chunk.js": "/ReactRandomQuotes/static/js/2.e74006b9.chunk.js",
     "index.html": "/ReactRandomQuotes/index.html",
-    "precache-manifest.b0dea1dcd79677b10e71f72b092e2d17.js": "/ReactRandomQuotes/precache-manifest.b0dea1dcd79677b10e71f72b092e2d17.js",
+    "precache-manifest.95a93924249ce9743b80680d918d2a9e.js": "/ReactRandomQuotes/precache-manifest.95a93924249ce9743b80680d918d2a9e.js",
     "service-worker.js": "/ReactRandomQuotes/service-worker.js",
-    "static/js/2.46f46981.chunk.js.LICENSE.txt": "/ReactRandomQuotes/static/js/2.46f46981.chunk.js.LICENSE.txt"
+    "static/js/2.e74006b9.chunk.js.LICENSE.txt": "/ReactRandomQuotes/static/js/2.e74006b9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d36fa834.js",
-    "static/js/2.46f46981.chunk.js",
-    "static/css/main.5cd383c6.chunk.css",
-    "static/js/main.c58bae3a.chunk.js"
+    "static/js/2.e74006b9.chunk.js",
+    "static/css/main.eb9232bb.chunk.css",
+    "static/js/main.45241610.chunk.js"
   ]
 }
